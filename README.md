@@ -21,3 +21,8 @@ cd Docker/
 python server.py
 bash'''
 
+### 2. Run docker build command
+
+''' bash 
+# docker build -t abhi-web-app .
+bash '''

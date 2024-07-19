@@ -19,4 +19,5 @@ cd Docker/
 
 # Run the Python server (in a separate terminal)
 python server.py
+bash'''
 

@@ -14,7 +14,7 @@ First, set up the Python web server using `server.py` to serve static files:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/static-web-server.git](https://github.com/g23ai2043/CloudAssignment.git)
+git clone https://github.com/yourusername/static-web-server.git
 cd Docker/
 
 # Run the Python server (in a separate terminal)

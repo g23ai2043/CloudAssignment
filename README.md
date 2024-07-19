@@ -12,17 +12,17 @@ Follow these steps to set up and run the static web server and Dockerized webpag
 
 First, set up the Python web server using `server.py` to serve static files:
 
-```bash
+```
 # Clone the repository
 git clone https://github.com/yourusername/static-web-server.git
 cd Docker/
 
 # Run the Python server (in a separate terminal)
 python server.py
-bash'''
+'''
 
 ### 2. Run docker build command
 
-''' bash 
+'''  
 # docker build -t abhi-web-app .
-bash '''
+ '''

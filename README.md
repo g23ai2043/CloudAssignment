@@ -19,23 +19,32 @@ cd Docker/
 # Run the Python server (in a separate terminal)
 python server.py
 ```
-
+<p align="center">
+  <img src="">
+</p>
 ### 2. Run docker build command
 
 ```
 # Run the docker build image command 
 docker build -t abhi-web-app .
 ```
-
+<p align="center">
+  <img src="">
+</p>
 ### 3. Run docker image
 
 ```
 # Run the docker build image command 
 docker build -t abhi-web-app .
 ```
-
+<p align="center">
+  <img src="">
+</p>
 ### 4. Open localhost on port 8080 in the browser
 ```
 # Open browser and search for localhost
 http://localhost:8080
 ```
+<p align="center">
+  <img src="">
+</p>

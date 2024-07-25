@@ -1,14 +1,18 @@
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import SimpleHTTPRequestHandler, HTTPServer
+import os
 
-# Define the port for your Python server
-PORT = 8080
+class CustomHTTPRequestHandler(SimpleHTTPRequestHandler):
+    def translate_path(self, path):
+        # Serve files from the "templates" directory if the path is "/"
+        if path == '/':
+            path = '/templates/index.html'
+        return super().translate_path(path)
 
-# Set up the server handler
-Handler = SimpleHTTPRequestHandler
+def run(server_class=HTTPServer, handler_class=CustomHTTPRequestHandler, port=8080):
+    server_address = ('', port)
+    httpd = server_class(server_address, handler_class)
+    print(f'Starting httpd server on port {port}...')
+    httpd.serve_forever()
 
-# Create an HTTP server
-httpd = HTTPServer(('localhost', PORT), Handler)
-
-# Start the server
-print(f'Starting server on localhost:{PORT}')
-httpd.serve_forever()
+if __name__ == "__main__":
+    run()

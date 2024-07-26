@@ -17,9 +17,7 @@ git clone https://github.com/g23ai2043/CloudAssignment.git
 cd Docker/
 
 ```
-<p align="center">
-  <img src="">
-</p>
+
 ### 2. Run docker build command
 
 ```
@@ -27,7 +25,7 @@ cd Docker/
 docker build -t web_app .
 ```
 <p align="center">
-  <img src="docker-build.jpg">
+  <img src="images/docker-build.jpg">
 </p>
 ### 3. Run docker image
 
@@ -36,15 +34,15 @@ docker build -t web_app .
 docker run -p 8080:8080 web_app
 ```
 <p align="center">
-  <img src="docker-run.jpg">
+  <img src="images/docker-run.jpg">
 </p>
 We can see that the image and container has been created in docker desktop.
 <p align="center">
-  <img src="docker-image.jpg">
+  <img src="images/docker-image.jpg">
 </p>
 
 <p align="center">
-  <img src="docker-container.jpg">
+  <img src="images/docker-container.jpg">
 </p>
 
 ### 4. Open localhost on port 8080 in the browser
@@ -53,5 +51,5 @@ We can see that the image and container has been created in docker desktop.
 http://localhost:8080
 ```
 <p align="center">
-  <img src="webpage.jpg">
+  <img src="images/webpage.jpg">
 </p>

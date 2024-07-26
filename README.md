@@ -54,6 +54,7 @@ docker build -t web_app .
 <p align="center">
   <img src="images/docker-build.jpg">
 </p>
+
 ### 3. Run docker image
 
 ```
